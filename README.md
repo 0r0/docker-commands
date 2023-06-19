@@ -69,3 +69,18 @@ docker run --name test -it neo4j
 ```
 run a container named `test` form `neo4j` image
 
+### ➖PS
+```
+docker ps
+```
+Lists docker running containers.
+**Examples:**
+```
+docker ps --all
+```
+`--all` or `-a` list all containers. default just shows running.
+```
+docker ps --latest
+```
+`--latest` or `-l` list the latest created container
+
