@@ -6,13 +6,13 @@ will need in order to do their job better.
 
 ---
 
-### Version
+### ➖Version | [📖 docs](https://docs.docker.com/engine/reference/commandline/version/)
 ```
 docker version
 ```
 To see the Installed Docker version info.
 
-### Search
+### ➖Search | [📖 docs](https://docs.docker.com/engine/reference/commandline/search/)
 ```
 docker search [name]
 ```
@@ -21,7 +21,7 @@ For example if you want to get `Neo4j` image run:
 ```
 docker search neo4j
 ```
-### Pull
+### ➖Pull | [📖 docs](https://docs.docker.com/engine/reference/commandline/pull/)
 ```
 docker pull [name]:[TAG]
 ```
@@ -46,4 +46,26 @@ docker pull ubuntu:22.04
 ```
 this will pull a specefic version of `ubuntu`.
 
-###
+### ➖Images | [📖 docs](https://docs.docker.com/engine/reference/commandline/images/)
+```
+docker images
+```
+This will print a list of all docker images on the local system.
+
+
+### ➖Run | [📖 docs](https://docs.docker.com/engine/reference/commandline/run/)
+```
+docker run [name] [command] [args]
+```
+Creates and run a new container from an image.
+
+**Examples:**
+```
+docker run neo4j
+```
+simply runs the `neo4j` image in a new container
+```
+docker run --name test -it neo4j
+```
+run a container named `test` form `neo4j` image
+
