@@ -101,3 +101,20 @@ docker kill neo4j_imun postgress-UX59
 ```
 This will kill these 2 containers.
 
+
+### ⭕️ Stop | [📖 docs](https://docs.docker.com/engine/reference/commandline/stop/)
+```
+docker stop [CONTAINER
+```
+Stop one or more containers.
+```
+docker stop -t 10000 Neo4j-98xt
+```
+Stops Neo4j container after waiting for a specific time.
+
+### ⭕️ Build | [📖 docs](https://docs.docker.com/engine/reference/commandline/build/)
+```
+docker build [DockerFilePath]
+```
+Build an image from a docker file or docker repository.
+
