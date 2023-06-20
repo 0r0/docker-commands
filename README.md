@@ -152,5 +152,16 @@ docker logs -f --until=30m neo4j-ex54
 ```
 this will display logs before a specific point in time.
 
+### ⭕️ Commit | [📖 docs](https://docs.docker.com/engine/reference/commandline/commit/)
+```
+docker commit [CONTAINER] [REPOSITORY]
+```
+Create a new image from a container's changes. The new image will not include any data from the container's volumes.
+```
+docker commit neo4j-es87 example/test:v4
+```
+This will creates a new image from `neo4j-es87` container in `example/test` repository with `v4` as its tag.
+You can use `--change` options to apply dockerfile instructions to the new image being created.
 
+---
 
