@@ -118,3 +118,9 @@ docker build [DockerFilePath]
 ```
 Build an image from a docker file or docker repository.
 
+### ⭕️ Attach | [📖 docs](https://docs.docker.com/engine/reference/commandline/attach/)
+```
+docker attach [CONTAINER]
+```
+Attach your terminal to a running container to control I/O operations.
+
