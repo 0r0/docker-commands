@@ -138,3 +138,19 @@ docker exec -it ubuntu-76sx sh
 ```
 This starts a new shell session in the `ubuntu-76sx` container.
 
+### ⭕️ Logs | [📖 docs](https://docs.docker.com/engine/reference/commandline/logs/)
+```
+docker logs [CONTAINER
+```
+See the logs for a given container.
+```
+docker logs --follow ubuntu-76sx
+```
+Use `--follow` or `-f` for display logs of `ubuntu-76sx` container and follow the output as the logs continues.
+```
+docker logs -f --until=30m neo4j-ex54
+```
+this will display logs before a specific point in time.
+
+
+
