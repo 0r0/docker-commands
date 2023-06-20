@@ -6,13 +6,13 @@ will need in order to do their job better.
 
 ---
 
-### ➖Version | [📖 docs](https://docs.docker.com/engine/reference/commandline/version/)
+### ⭕️ Version | [📖 docs](https://docs.docker.com/engine/reference/commandline/version/)
 ```
 docker version
 ```
 To see the Installed Docker version info.
 
-### ➖Search | [📖 docs](https://docs.docker.com/engine/reference/commandline/search/)
+### ⭕️ Search | [📖 docs](https://docs.docker.com/engine/reference/commandline/search/)
 ```
 docker search [name]
 ```
@@ -21,7 +21,7 @@ For example if you want to get `Neo4j` image run:
 ```
 docker search neo4j
 ```
-### ➖Pull | [📖 docs](https://docs.docker.com/engine/reference/commandline/pull/)
+### ⭕️ Pull | [📖 docs](https://docs.docker.com/engine/reference/commandline/pull/)
 ```
 docker pull [name]:[TAG]
 ```
@@ -46,14 +46,14 @@ docker pull ubuntu:22.04
 ```
 this will pull a specefic version of `ubuntu`.
 
-### ➖Images | [📖 docs](https://docs.docker.com/engine/reference/commandline/images/)
+### ⭕️ Images | [📖 docs](https://docs.docker.com/engine/reference/commandline/images/)
 ```
 docker images
 ```
 This will print a list of all docker images on the local system.
 
 
-### ➖Run | [📖 docs](https://docs.docker.com/engine/reference/commandline/run/)
+### ⭕️ Run | [📖 docs](https://docs.docker.com/engine/reference/commandline/run/)
 ```
 docker run [name] [command] [args]
 ```
@@ -69,7 +69,7 @@ docker run --name test -it neo4j
 ```
 run a container named `test` form `neo4j` image
 
-### ➖PS | [📖 docs](https://docs.docker.com/engine/reference/commandline/ps/)
+### ⭕️ PS | [📖 docs](https://docs.docker.com/engine/reference/commandline/ps/)
 ```
 docker ps 
 ```
@@ -84,5 +84,20 @@ docker ps --latest
 ```
 `--latest` or `-l` list the latest created container
 
+### ⭕️ Restart | [📖 docs](https://docs.docker.com/engine/reference/commandline/restart/)
+```
+docker restart [CONTAINER]
+```
+restart one or more container.
 
+### ⭕️ Kill | [📖 docs](https://docs.docker.com/engine/reference/commandline/kill/)
+```
+docker kill [CONTAINER]
+```
+Kill one or more containers
+**Examples:**
+```
+docker kill neo4j_imun postgress-UX59
+```
+This will kill these 2 containers.
 
