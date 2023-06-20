@@ -124,3 +124,17 @@ docker attach [CONTAINER]
 ```
 Attach your terminal to a running container to control I/O operations.
 
+### ⭕️ Exec | [📖 docs](https://docs.docker.com/engine/reference/commandline/exec/)
+```
+docker exec [CONTAINER] [COMMANDS
+```
+Executes cli commands in a running container.
+```
+docker exec ubuntu-76sx touch /tmp/myfile
+```
+This will creates a file in `ubuntu-76sx` container.
+```
+docker exec -it ubuntu-76sx sh
+```
+This starts a new shell session in the `ubuntu-76sx` container.
+
