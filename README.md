@@ -104,7 +104,7 @@ This will kill these 2 containers.
 
 ### ⭕️ Stop | [📖 docs](https://docs.docker.com/engine/reference/commandline/stop/)
 ```
-docker stop [CONTAINER
+docker stop [CONTAINER]
 ```
 Stop one or more containers.
 ```
@@ -126,7 +126,7 @@ Attach your terminal to a running container to control I/O operations.
 
 ### ⭕️ Exec | [📖 docs](https://docs.docker.com/engine/reference/commandline/exec/)
 ```
-docker exec [CONTAINER] [COMMANDS
+docker exec [CONTAINER] [COMMANDS]
 ```
 Executes cli commands in a running container.
 ```
@@ -140,7 +140,7 @@ This starts a new shell session in the `ubuntu-76sx` container.
 
 ### ⭕️ Logs | [📖 docs](https://docs.docker.com/engine/reference/commandline/logs/)
 ```
-docker logs [CONTAINER
+docker logs [CONTAINER]
 ```
 See the logs for a given container.
 ```
