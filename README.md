@@ -162,9 +162,9 @@ docker commit neo4j-es87 example/test:v4
 ```
 This will creates a new image from `neo4j-es87` container in `example/test` repository with `v4` as its tag.
 You can use `--change` options to apply dockerfile instructions to the new image being created.
-```
 
-```
+
+
 ### ⭕️ Compose | [📖 docs](https://docs.docker.com/compose/)
 ```
 docker compose up -d 
@@ -172,6 +172,6 @@ docker compose up -d
 compose command use for create  and running multi container docker application and use yaml for configuration application service
 first open go to directory that docker-compose.yml file  is exist then run above command to configuration set for your containers
 -d command for detach mode
-```
+
 ---
 
